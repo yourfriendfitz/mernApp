@@ -1,0 +1,28 @@
+{
+  "name": "mernapp",
+  "version": "1.0.0",
+  "description": "MongoDB, Node, React",
+  "main": "index.js",
+  "author": "Joshua Fitzgerald <fitzgerald913@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.3.1",
+    "nodemon": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/node": "latest",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
