@@ -4,7 +4,7 @@
   "description": "MongoDB, Node, React",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec bable-node server.js --ignore public/",
+    "start": "nodemon --exec babel-node server.js --ignore public/",
     "dev": "webpack -wd"
   },
   "author": "Joshua Fitzgerald <fitzgerald913@gmail.com>",
