@@ -1,14 +1,19 @@
-import config, { nodeEnv } from "./config";
-import http from "http";
+import config from "./config";
+import apiRouter from "./api";
 
-const server = http.createServer();
+import express from "express";
 
-server.listen(8080);
+const server = express();
 
-server.on("request", (req, res) => {
-  res.write("Hello HTTP!\n");
-  setTimeout(() => {
-    res.write("I can stream \n");
-    res.end();
-  }, 3000);
+server.set("view engine", "ejs");
+
+server.get("/", (req, res) => {
+  res.render("index");
+});
+
+server.use(express.static("public"));
+server.use("/api", apiRouter);
+
+server.listen(config.port, () => {
+  console.info(`Express listening on port ${config.port}`);
 });
